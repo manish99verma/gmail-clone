@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/gmail-clone/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <link rel="stylesheet" crossorigin href="/gmail-clone/assets/index-BdHNQjLe.css">
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Top Navbar -->
+    <div
+      class="flex items-center justify-between px-6 py-3 bg-white border-b shadow"
+    >
+      <div class="text-2xl font-semibold text-red-600">Gmail</div>
+      <input
+        type="text"
+        placeholder="Search mail"
+        class="w-[400px] px-4 py-2 border border-gray-300 rounded-full"
+      />
+      <div class="w-10 h-10 bg-gray-300 rounded-full"></div>
+    </div>
+
+    <div class="flex h-[calc(100vh-64px)]">
+      <!-- Sidebar -->
+      <div class="w-60 bg-white border-r p-4">
+        <button class="bg-red-500 text-white px-4 py-2 rounded mb-6 w-full">
+          Compose
+        </button>
+        <ul class="space-y-2 text-sm">
+          <li class="font-semibold text-red-600">Inbox</li>
+          <li class="hover:text-red-600 cursor-pointer">Starred</li>
+          <li class="hover:text-red-600 cursor-pointer">Sent</li>
+          <li class="hover:text-red-600 cursor-pointer">Drafts</li>
+          <li class="hover:text-red-600 cursor-pointer">Spam</li>
+        </ul>
+      </div>
+
+      <!-- Email List -->
+      <div class="flex-1 bg-white p-4 overflow-y-auto">
+        <div
+          class="border-b py-3 flex justify-between items-center hover:bg-gray-50 cursor-pointer"
+        >
+          <div>
+            <div class="font-semibold">Alice Johnson</div>
+            <div class="text-sm text-gray-600">Meeting schedule update</div>
+          </div>
+          <div class="text-sm text-gray-500">10:42 AM</div>
+        </div>
+
+        <div
+          class="border-b py-3 flex justify-between items-center hover:bg-gray-50 cursor-pointer"
+        >
+          <div>
+            <div class="font-semibold">Google</div>
+            <div class="text-sm text-gray-600">
+              Security alert on your account
+            </div>
+          </div>
+          <div class="text-sm text-gray-500">9:20 AM</div>
+        </div>
+
+        <div
+          class="border-b py-3 flex justify-between items-center hover:bg-gray-50 cursor-pointer"
+        >
+          <div>
+            <div class="font-semibold">YouTube</div>
+            <div class="text-sm text-gray-600">
+              New videos from your subscriptions
+            </div>
+          </div>
+          <div class="text-sm text-gray-500">Yesterday</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
